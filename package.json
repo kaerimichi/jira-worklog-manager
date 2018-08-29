@@ -1,10 +1,13 @@
 {
   "name": "jira-worklog-manager",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "jira-worklog-manager": "./index.js"
   },
   "repository": {
     "type": "git",
