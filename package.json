@@ -1,15 +1,15 @@
 {
   "name": "jira-worklog-manager",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "jira-worklog-manager": "./index.js",
-    "jira-worklog-manager-check": "./index-check.js",
-    "jira-worklog-manager-register": "./index-register.js"
+    "jira-worklog-manager": "./index",
+    "jira-worklog-manager-check": "./index-check",
+    "jira-worklog-manager-register": "./index-register"
   },
   "repository": {
     "type": "git",
