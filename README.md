@@ -24,7 +24,7 @@ Set the following environment variables:
 ### Work log registration
 
 ```
-Usage: jira-worklog-manager-register [options]
+Usage: register [options]
 
 Options:
 
@@ -38,7 +38,7 @@ Options:
 ### Work log retrieval
 
 ```
-Usage: jira-worklog-manager-check [options]
+Usage: check [options]
 
 Options:
 
