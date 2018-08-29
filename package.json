@@ -1,13 +1,15 @@
 {
   "name": "jira-worklog-manager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "jira-worklog-manager": "./index.js"
+    "jira-worklog-manager": "./index.js",
+    "jira-worklog-manager-check": "./index-check.js",
+    "jira-worklog-manager-register": "./index-register.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,9 @@
     "atlassian"
   ],
   "author": {
-    "name" : "Gabriel Rimes",
-    "email" : "jivagorimes@gmail.com",
-    "url" : "https://github.com/kaerimichi/"
+    "name": "Gabriel Rimes",
+    "email": "jivagorimes@gmail.com",
+    "url": "https://github.com/kaerimichi/"
   },
   "license": "ISC",
   "dependencies": {

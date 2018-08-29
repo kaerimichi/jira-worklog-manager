@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('moment-duration-format')
 
 const program = require('commander')

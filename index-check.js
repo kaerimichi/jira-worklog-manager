@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const program = require('commander')
 const moment = require('moment')
 const service = require('./lib/serviceHandler')()
