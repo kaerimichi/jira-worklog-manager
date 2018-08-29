@@ -14,7 +14,7 @@ async function getIssueWorklogs (issueId) {
     : { exitCode: 127, message: 'There was an error while retrieving your worklogs.' }
   let worklogs = data.fields.worklog.worklogs || []
   const table = new Table({
-    head: ['Criado por', 'Editado por', 'Apontado em', 'Horas'],
+    head: ['Created by', 'Updated by', 'Registered at', 'Work log'],
     colWidths: [24, 24, 32, 12]
   })
 
@@ -22,7 +22,7 @@ async function getIssueWorklogs (issueId) {
     return [
       entry.author.displayName,
       entry.updateAuthor.displayName,
-      moment(entry.started).format('DD/MM/YYYY [às] HH:mm:ss'),
+      moment(entry.started).format('DD/MM/YYYY [@] HH:mm:ss'),
       entry.timeSpent
     ]
   })
