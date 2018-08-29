@@ -21,24 +21,11 @@ Set the following environment variables:
 
 ## Usage
 
-```
-Usage: jira-worklog-manager [options] [command]
-
-Options:
-
--V, --version  output the version number
--h, --help     output usage information
-
-Commands:
-
-register       register a worklog period
-check          check issue worklog
-help [cmd]     display help for [cmd]
-```
-
 ### Work log registration
 
 ```
+Usage: jira-worklog-manager-register [options]
+
 Options:
 
 -d, --date [date]    worklog date (DD/MM)
@@ -51,6 +38,8 @@ Options:
 ### Work log retrieval
 
 ```
+Usage: jira-worklog-manager-check [options]
+
 Options:
 
 -i, --issue [issue]  issue identifier
