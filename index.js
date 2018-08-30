@@ -9,6 +9,8 @@ program.version('1.0.10')
 program
   .command('check')
   .option('-i, --issue [issue]', 'issue identifier')
+  .option('-a, --author [author]', 'author name')
+  .option('-d, --date [date]', 'worklog date (DD/MM)')
   .action(options => require('./lib/commands/check')(options))
 
 program
