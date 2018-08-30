@@ -1,6 +1,6 @@
 {
   "name": "jira-worklog-manager",
-  "version": "1.0.10",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,12 +16,13 @@
   "keywords": [
     "jira",
     "worklog",
-    "atlassian"
+    "atlassian",
+    "tools"
   ],
   "author": {
     "name": "Gabriel Rimes",
     "email": "jivagorimes@gmail.com",
-    "url": "https://github.com/kaerimichi/"
+    "url": "https://gabrielrimes.net"
   },
   "license": "ISC",
   "dependencies": {
