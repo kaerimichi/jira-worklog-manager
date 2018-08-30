@@ -19,4 +19,10 @@ program
   .option('-i, --issue [issue]', 'issue identifier')
   .action(options => require('./lib/commands/register')(options))
 
+program
+  .command('bulk-register')
+  .option('-f, --filename [filename]', 'path to a YAML file with the worklogs')
+  .option('--dry-run', 'list work logs to be registered without actually registering them')
+  .action(options => require('./lib/commands/bulkRegister')(options))
+
 program.parse(process.argv)
