@@ -24,7 +24,7 @@ Set the following environment variables:
 ### Work log registration
 
 ```
-Usage: register [options]
+Usage: jira-worklog-manager register [options]
 
 Options:
 
@@ -35,10 +35,42 @@ Options:
 -h, --help           output usage information
 ```
 
+### Bulk work log registration
+
+```
+Usage: jira-worklog-manager bulk-register [options]
+
+Options:
+
+-f, --filename [filename]  path to a YAML file with the worklogs
+--dry-run                  list work logs to be registered without actually registering them
+-h, --help                 output usage information
+```
+
+You can bulk register your work logs with a YAML file like in the example below:
+
+```
+summary:
+- date: 10/08
+  worklogs:
+  - issueId: ABCDE-1234
+    start: 10h00
+    end: 10h30
+  - issueId: ABCDE-5678
+    start: 12h00
+    end: 13h30
+- date: 11/08
+  worklogs:
+  - issueId: ABCDE-0101
+    start: 10h15
+    end: 10h30
+
+```
+
 ### Work log retrieval
 
 ```
-Usage: check [options]
+Usage: jira-worklog-manager check [options]
 
 Options:
 
@@ -48,5 +80,4 @@ Options:
 
 ## Coming soon!
 
-- bulk work log registration
 - a proper way to configure your Jira credentials
