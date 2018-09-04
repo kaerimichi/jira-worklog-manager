@@ -34,6 +34,7 @@
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "moment-duration-format": "^2.2.2"
+    "moment-duration-format": "^2.2.2",
+    "queue": "^4.5.0"
   }
 }
