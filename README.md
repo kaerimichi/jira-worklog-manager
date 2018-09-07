@@ -14,7 +14,13 @@ npm i -g jira-worklog-manager
 
 ## Configuration
 
-Set the following environment variables:
+Run the following command:
+
+```
+$ jira-worklog-manager configure
+```
+
+You can also configure by setting the following environment variables:
 
 - `JIRA_API_URL` with the Jira server URL
 - `JIRA_API_TOKEN` with your HTTP basic auth token
@@ -77,7 +83,3 @@ Options:
 -i, --issue [issue]  issue identifier
 -h, --help           output usage information
 ```
-
-## Coming soon!
-
-- a proper way to configure your Jira credentials

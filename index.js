@@ -8,6 +8,10 @@ const { run } = require('./lib/commandRunner')
 program.version(require('./package.json').version)
 
 program
+  .command('configure')
+  .action(options => run('configure', options))
+
+program
   .command('check')
   .option('-i, --issue [issue]', 'issue identifier')
   .action(options => run('check', options))
