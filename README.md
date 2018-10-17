@@ -34,11 +34,12 @@ Usage: jira-worklog-manager register [options]
 
 Options:
 
--d, --date [date]    worklog date (DD/MM)
--s, --start [start]  start time (HH:mm)
--e, --end [end]      end time (HH:mm)
--i, --issue [issue]  issue identifier
--h, --help           output usage information
+-d, --date [date]        worklog date (DD/MM)
+-s, --start [start]      start time (HH:mm)
+-e, --end [end]          end time (HH:mm)
+-i, --issue [issue]      issue identifier
+-c, --comment [comment]  work log comment
+-h, --help               output usage information
 ```
 
 ### Bulk work log registration
@@ -62,6 +63,7 @@ summary:
   - issueId: ABCDE-1234
     start: 10h00
     end: 10h30
+    comment: 'Work log comment (optional)'
   - issueId: ABCDE-5678
     start: 12h00
     end: 13h30
@@ -70,7 +72,6 @@ summary:
   - issueId: ABCDE-0101
     start: 10h15
     end: 10h30
-
 ```
 
 ### Work log retrieval
