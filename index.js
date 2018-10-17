@@ -20,6 +20,7 @@ program
   .option('-s, --start [start]', 'start time (HH:mm)')
   .option('-e, --end [end]', 'end time (HH:mm)')
   .option('-i, --issue [issue]', 'issue identifier')
+  .option('-c, --comment [comment]', 'work log comment')
   .action(options => run('register', options))
 
 program
