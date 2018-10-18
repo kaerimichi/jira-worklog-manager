@@ -4,7 +4,7 @@ A command line tool to register and retrieve work logs from an issue. It works l
 
 ## Motivation
 
-This is a tool built on top of the revolutionary programming approach in which a developer feels very angry because he wants to perform some task that is dead simple and yet there are no convenient way to achieve this. This paradigm is also known as **WDD - Wrath Driven Development**.
+This is a tool built on top of the revolutionary programming approach in which a developer feels very angry because he wants to perform some task that is dead simple and yet there is no convenient way to achieve this. This paradigm is also known as **WDD - Wrath Driven Development**.
 
 ## Installation
 
@@ -19,11 +19,6 @@ Run the following command:
 ```
 $ jira-worklog-manager configure
 ```
-
-You can also configure by setting the following environment variables:
-
-- `JIRA_API_URL` with the Jira server URL
-- `JIRA_API_TOKEN` with your HTTP basic auth token
 
 ## Usage
 
