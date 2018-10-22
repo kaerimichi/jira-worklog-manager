@@ -15,11 +15,6 @@ program
   .action(options => run('check', options))
 
 program
-  .command('timetracker')
-  .option('-d, --date [date]', 'Optional worklog date (DD/MM/YYYY), defaults to current date')
-  .action(options => run('timetracker', options))
-
-program
   .command('register')
   .option('-d, --date [date]', 'worklog date (DD/MM)')
   .option('-s, --start [start]', 'start time (HH:mm)')
@@ -33,5 +28,10 @@ program
   .option('-f, --filename [filename]', 'path to a YAML file with the worklogs')
   .option('--dry-run', 'list work logs to be registered without actually registering them')
   .action(options => run('bulkRegister', options))
+
+program
+  .command('check-date')
+  .option('-d, --date [date]', 'Optional worklog date (DD/MM/YYYY), defaults to current date')
+  .action(options => run('checkDate', options))
 
 program.parse(process.argv)

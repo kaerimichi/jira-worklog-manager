@@ -1,10 +1,10 @@
 # Jira Worklog Manager
 
-A command line tool to register and retrieve work logs from an issue. It works like the [Timetracker plugin](https://marketplace.atlassian.com/apps/1211243/timetracker-time-tracking-reporting?hosting=server&tab=overview) ;)
+A command line tool to register and retrieve work logs from an issue. It works pretty much like the [Timetracker plugin](https://marketplace.atlassian.com/apps/1211243/timetracker-time-tracking-reporting?hosting=server&tab=overview) ;)
 
 ## Motivation
 
-This is a tool built on top of the revolutionary programming approach in which a developer feels very angry because he wants to perform some task that is dead simple and yet there are no convenient way to achieve this. This paradigm is also known as **WDD - Wrath Driven Development**.
+This is a tool built on top of the revolutionary programming approach in which a developer feels very angry because he wants to perform some task that is dead simple and yet there is no convenient way to achieve this. This paradigm is also known as **WDD - Wrath Driven Development**.
 
 ## Installation
 
@@ -19,11 +19,6 @@ Run the following command:
 ```
 $ jira-worklog-manager configure
 ```
-
-You can also configure by setting the following environment variables:
-
-- `JIRA_API_URL` with the Jira server URL
-- `JIRA_API_TOKEN` with your HTTP basic auth token
 
 ## Usage
 
@@ -85,16 +80,16 @@ Options:
 -h, --help           output usage information
 ```
 
-### Timetracker information retrieval
+### Work log retrieval of a given date
 
-You can retrieve all work log for the specified day (defaults to current day if not specified)
+You can retrieve all work logs of a given date (defaults to current day if not specified)
 
 ```
-  Usage: timetracker [options]
+  Usage: jira-worklog-manager check-date [options]
 
   Options:
 
-    -d, --date [date]  Optional worklog date (DD/MM/YYYY), defaults to current date
+    -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
     -h, --help         output usage information
 
 ``` 
