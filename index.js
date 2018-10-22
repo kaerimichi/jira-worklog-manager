@@ -15,6 +15,11 @@ program
   .action(options => run('check', options))
 
 program
+  .command('timetracker')
+  .option('-d, --date [date]', 'Optional worklog date (DD/MM/YYYY), defaults to current date')
+  .action(options => run('timetracker', options))
+
+program
   .command('register')
   .option('-d, --date [date]', 'worklog date (DD/MM)')
   .option('-s, --start [start]', 'start time (HH:mm)')
