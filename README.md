@@ -69,7 +69,7 @@ summary:
     end: 10h30
 ```
 
-### Work log retrieval
+### Work log retrieval of a given issue
 
 ```
 Usage: jira-worklog-manager check [options]
