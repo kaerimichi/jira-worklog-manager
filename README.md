@@ -79,3 +79,17 @@ Options:
 -i, --issue [issue]  issue identifier
 -h, --help           output usage information
 ```
+
+### Timetracker information retrieval
+
+You can retrieve all work log for the specified day (defaults to current day if not specified)
+
+```
+  Usage: timetracker [options]
+
+  Options:
+
+    -d, --date [date]  Optional worklog date (DD/MM/YYYY), defaults to current date
+    -h, --help         output usage information
+
+``` 
