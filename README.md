@@ -1,6 +1,6 @@
 # Jira Worklog Manager
 
-A command line tool to register and retrieve work logs from an issue. It works like the [Timetracker plugin](https://marketplace.atlassian.com/apps/1211243/timetracker-time-tracking-reporting?hosting=server&tab=overview) ;)
+A command line tool to register and retrieve work logs from an issue. It works pretty much like the [Timetracker plugin](https://marketplace.atlassian.com/apps/1211243/timetracker-time-tracking-reporting?hosting=server&tab=overview) ;)
 
 ## Motivation
 
@@ -80,16 +80,16 @@ Options:
 -h, --help           output usage information
 ```
 
-### Timetracker information retrieval
+### Work log retrieval of a given date
 
-You can retrieve all work log for the specified day (defaults to current day if not specified)
+You can retrieve all work logs of a given date (defaults to current day if not specified)
 
 ```
-  Usage: timetracker [options]
+  Usage: jira-worklog-manager check-date [options]
 
   Options:
 
-    -d, --date [date]  Optional worklog date (DD/MM/YYYY), defaults to current date
+    -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
     -h, --help         output usage information
 
 ``` 
