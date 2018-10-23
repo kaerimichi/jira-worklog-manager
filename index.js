@@ -30,8 +30,8 @@ program
   .action(options => run('bulkRegister', options))
 
 program
-  .command('check-date')
-  .option('-d, --date [date]', 'Optional worklog date (DD/MM/YYYY), defaults to current date')
-  .action(options => run('checkDate', options))
+  .command('worklogs')
+  .option('-d, --date [date]', 'optional worklog date (DD/MM/YYYY), defaults to current date')
+  .action(options => run('worklogs', options))
 
 program.parse(process.argv)

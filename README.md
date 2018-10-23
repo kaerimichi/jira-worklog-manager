@@ -85,11 +85,11 @@ Options:
 You can retrieve all work logs of a given date (defaults to current day if not specified)
 
 ```
-  Usage: jira-worklog-manager check-date [options]
+Usage: jira-worklog-manager worklogs [options]
 
-  Options:
+Options:
 
-    -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
-    -h, --help         output usage information
+  -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
+  -h, --help         output usage information
 
 ``` 
