@@ -65,9 +65,10 @@ summary:
 - date: 11/08
   worklogs:
   - issueId: ABCDE-0101
-    start: 10h15
-    end: 10h30
+    duration: 35
 ```
+
+Note: You can either use `start` and `end` or `duration` (minutes) to register in bulk mode.
 
 ### Work log retrieval of a given issue
 
