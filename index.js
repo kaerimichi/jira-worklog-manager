@@ -35,3 +35,5 @@ program
   .action(options => run('worklogs', options))
 
 program.parse(process.argv)
+
+if (!program.args.length) program.outputHelp()
