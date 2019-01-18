@@ -32,6 +32,7 @@ program
 program
   .command('worklogs')
   .option('-d, --date [date]', 'optional worklog date (DD/MM/YYYY), defaults to current date')
+  .option('--week [week]', 'week flag')
   .action(options => run('worklogs', options))
 
 program.parse(process.argv)
