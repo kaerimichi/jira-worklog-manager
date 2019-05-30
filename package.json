@@ -35,6 +35,7 @@
     "moment": "^2.24.0",
     "moment-duration-format": "^2.2.2",
     "moment-timezone": "^0.5.23",
-    "queue": "^4.5.1"
+    "queue": "^4.5.1",
+    "uuid": "^3.3.2"
   }
 }

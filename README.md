@@ -43,15 +43,18 @@ Options:
 Usage: jira-worklog-manager bulk-register [options]
 
 Options:
-
--f, --filename [filename]  path to a YAML file with the worklogs
---dry-run                  list work logs to be registered without actually registering them
--h, --help                 output usage information
+  -f, --filename [filename]     path to a YAML file with the worklogs
+  --dry-run                     list work logs to be registered without actually registering them
+  --remove-registered-worklogs  keep registered entries in YAML file
+  -h, --help                    output usage information
 ```
 
 You can bulk register your work logs with a YAML file like in the example below:
 
 ```
+tasks:
+  - issueId: ABCDE-0101
+    alias: SOME_COMMON_TASK
 summary:
 - date: 10/08
   worklogs:
@@ -66,9 +69,11 @@ summary:
   worklogs:
   - issueId: ABCDE-0101
     duration: 35
+  - issueId: SOME_COMMON_TASK
+    duration: 120
 ```
 
-Note: You can either use `start` and `end` or `duration` (minutes) to register in bulk mode.
+Note: You can either use `start` / `end` or `duration` (minutes) to register in bulk mode. You can also use aliases to reference some task that you work very often and repeat several times in the YAML file, the alias will be replaced by the specified issue in the "tasks" session.
 
 ### Work log retrieval of a given issue
 

@@ -27,6 +27,7 @@ program
   .command('bulk-register')
   .option('-f, --filename [filename]', 'path to a YAML file with the worklogs')
   .option('--dry-run', 'list work logs to be registered without actually registering them')
+  .option('--remove-registered-worklogs', 'keep registered entries in YAML file')
   .action(options => run('bulkRegister', options))
 
 program
