@@ -2,10 +2,6 @@
 
 A command line tool to register and retrieve work logs from an issue. It works pretty much like the [Timetracker plugin](https://marketplace.atlassian.com/apps/1211243/timetracker-time-tracking-reporting?hosting=server&tab=overview) ;)
 
-## Motivation
-
-This is a tool built on top of the revolutionary programming approach in which a developer feels very angry because he wants to perform some task that is dead simple and yet there is no convenient way to achieve this. This paradigm is also known as **WDD - Wrath Driven Development**.
-
 ## Installation
 
 ```
@@ -45,7 +41,7 @@ Usage: jira-worklog-manager bulk-register [options]
 Options:
   -f, --filename [filename]     path to a YAML file with the worklogs
   --dry-run                     list work logs to be registered without actually registering them
-  --remove-registered-worklogs  keep registered entries in YAML file
+  --remove-registered-worklogs  remove registered entries in YAML file
   -h, --help                    output usage information
 ```
 
