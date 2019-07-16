@@ -27,12 +27,13 @@ program
   .command('bulk-register')
   .option('-f, --filename [filename]', 'path to a YAML file with the worklogs')
   .option('--dry-run', 'list work logs to be registered without actually registering them')
-  .option('--remove-registered-worklogs', 'keep registered entries in YAML file')
+  .option('--remove-registered-worklogs', 'remove registered entries in YAML file')
   .action(options => run('bulkRegister', options))
 
 program
   .command('worklogs')
   .option('-d, --date [date]', 'optional worklog date (DD/MM/YYYY), defaults to current date')
+  .option('--week', 'list work logs of the current week')
   .action(options => run('worklogs', options))
 
 program.parse(process.argv)

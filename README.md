@@ -92,6 +92,7 @@ Usage: jira-worklog-manager worklogs [options]
 Options:
 
   -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
+  --week             list work logs of the current week
   -h, --help         output usage information
 
 ``` 
