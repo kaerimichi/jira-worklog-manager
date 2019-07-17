@@ -24,13 +24,12 @@ $ jira-worklog-manager configure
 Usage: jira-worklog-manager register [options]
 
 Options:
-
--d, --date [date]        worklog date (DD/MM)
--s, --start [start]      start time (HH:mm)
--e, --end [end]          end time (HH:mm)
--i, --issue [issue]      issue identifier
--c, --comment [comment]  work log comment
--h, --help               output usage information
+  -d, --date [date]        worklog date (DD/MM)
+  -s, --start [start]      start time (HH:mm)
+  -e, --end [end]          end time (HH:mm)
+  -i, --issue [issue]      issue identifier
+  -c, --comment [comment]  work log comment
+  -h, --help               output usage information
 ```
 
 ### Bulk work log registration
@@ -52,21 +51,21 @@ tasks:
   - issueId: ABCDE-0101
     alias: SOME_COMMON_TASK
 summary:
-- date: 10/08
-  worklogs:
-  - issueId: ABCDE-1234
-    start: 10h00
-    end: 10h30
-    comment: 'Work log comment (optional)'
-  - issueId: ABCDE-5678
-    start: 12h00
-    end: 13h30
-- date: 11/08
-  worklogs:
-  - issueId: ABCDE-0101
-    duration: 35
-  - issueId: SOME_COMMON_TASK
-    duration: 120
+  - date: 10/08
+    worklogs:
+      - issueId: ABCDE-1234
+        start: 10h00
+        end: 10h30
+        comment: 'Work log comment (optional)'
+      - issueId: ABCDE-5678
+        start: 12h00
+        end: 13h30
+  - date: 11/08
+    worklogs:
+      - issueId: ABCDE-0101
+        duration: 35
+      - issueId: SOME_COMMON_TASK
+        duration: 120
 ```
 
 Note: You can either use `start` / `end` or `duration` (minutes) to register in bulk mode. You can also use aliases to reference some task that you work very often and repeat several times in the YAML file, the alias will be replaced by the specified issue in the "tasks" session.
@@ -77,9 +76,8 @@ Note: You can either use `start` / `end` or `duration` (minutes) to register in 
 Usage: jira-worklog-manager check [options]
 
 Options:
-
--i, --issue [issue]  issue identifier
--h, --help           output usage information
+  -i, --issue [issue]  issue identifier
+  -h, --help           output usage information
 ```
 
 ### Work log retrieval of a given date
@@ -90,9 +88,9 @@ You can retrieve all work logs of a given date (defaults to current day if not s
 Usage: jira-worklog-manager worklogs [options]
 
 Options:
-
-  -d, --date [date]  Optional worklog date (DD/MM), defaults to current date
+  -d, --date [date]  optional worklog date (DD/MM/YYYY), defaults to current date
   --week             list work logs of the current week
+  --month            list work logs of the current month
   -h, --help         output usage information
 
 ``` 
