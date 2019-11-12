@@ -50,6 +50,8 @@ You can bulk register your work logs with a YAML file like in the example below:
 tasks:
   - issueId: ABCDE-0101
     alias: SOME_COMMON_TASK
+  - issueId: ABCDE-0202, FGHIJ-0202, AAAAA-8888
+    alias: SOME_SUBJECT_WITH_MULTIPLE_ISSUES
 summary:
   - date: 10/08
     worklogs:
@@ -57,7 +59,7 @@ summary:
         start: 10h00
         end: 10h30
         comment: 'Work log comment (optional)'
-      - issueId: ABCDE-5678
+      - issueId: ABCDE-5678, EDCBA-9999
         start: 12h00
         end: 13h30
   - date: 11/08
@@ -69,6 +71,8 @@ summary:
 ```
 
 Note: You can either use `start` / `end` or `duration` (minutes) to register in bulk mode. You can also use aliases to reference some task that you work very often and repeat several times in the YAML file, the alias will be replaced by the specified issue in the "tasks" session.
+
+You can also specify several issues on bulk register. The total time of the specified interval will be splitted and several worklogs will be registered matching the number of issues. For example, let's say that you've worked on two issues from 13h to 14h (one hour). If you specify them separated by comma in the `issueId` field, 30 minutes will be logged for each one. You can set multiple issues to one alias as well.
 
 ### Work log retrieval of a given issue
 
