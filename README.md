@@ -50,8 +50,8 @@ You can bulk register your work logs with a YAML file like in the example below:
 tasks:
   - issueId: ABCDE-0101
     alias: SOME_COMMON_TASK
-  - issueId: ABCDE-0202, FGHIJ-0202, AAAAA-8888
-    alias: SOME_SUBJECT_WITH_MULTIPLE_ISSUES
+  - issueId: ABCDE-0202
+    alias: ANOTHER_COMMON_TASK
 summary:
   - date: 10/08
     worklogs:
@@ -66,7 +66,7 @@ summary:
     worklogs:
       - issueId: ABCDE-0101
         duration: 35
-      - issueId: SOME_COMMON_TASK
+      - issueId: SOME_COMMON_TASK, ANOTHER_COMMON_TASK
         duration: 120
 ```
 
