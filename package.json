@@ -1,7 +1,7 @@
 {
   "name": "jira-worklog-manager",
   "version": "1.13.1",
-  "description": "",
+  "description": "A CLI tool for registering work logs on Jira",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
