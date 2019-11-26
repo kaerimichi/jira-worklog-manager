@@ -72,7 +72,7 @@ summary:
 
 Note: You can either use `start` / `end` or `duration` (minutes) to register in bulk mode. You can also use aliases to reference some task that you work very often and repeat several times in the YAML file, the alias will be replaced by the specified issue in the "tasks" session.
 
-You can also specify several issues on bulk register. The total time of the specified interval will be splitted and several worklogs will be registered matching the number of issues. For example, let's say that you've worked on two issues from 13h to 14h (one hour). If you specify them separated by comma in the `issueId` field, 30 minutes will be logged for each one. You can set multiple issues to one alias as well.
+You can also specify several issues on bulk register. The total time of the specified interval will be splitted and several worklogs will be registered matching the number of issues. For example, let's say that you've worked on two issues from 13h to 14h (one hour). If you specify them separated by comma in the `issueId` field, 30 minutes will be logged for each one.
 
 ### Work log retrieval of a given issue
 
