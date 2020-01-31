@@ -1,6 +1,6 @@
 {
   "name": "jira-worklog-manager",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "A CLI tool for registering work logs on Jira",
   "main": "index.js",
   "scripts": {
