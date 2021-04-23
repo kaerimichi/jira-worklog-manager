@@ -16,6 +16,10 @@ Run the following command:
 $ jira-worklog-manager configure
 ```
 
+### Generating an API token
+
+Basic authentication in Jira using password is now deprecated so you should generate an API token to configure the application. Follow the [instructions](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) to generate an API token.
+
 ## Usage
 
 ### Work log registration
