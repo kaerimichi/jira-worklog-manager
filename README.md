@@ -71,7 +71,7 @@ summary:
       - issueId: ABCDE-0101
         duration: 35
       - issueId: SOME_COMMON_TASK, ANOTHER_COMMON_TASK
-        duration: 120
+        duration: 2h
 ```
 
 Note: You can either use `start` / `end` or `duration` (minutes) to register in bulk mode. You can also use aliases to reference some task that you work very often and repeat several times in the YAML file, the alias will be replaced by the specified issue in the "tasks" session.
